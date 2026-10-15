@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mirageBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08182B"/>
+      <stop offset="100%" stop-color="#0F2942"/>
+    </linearGradient>
+    <linearGradient id="mirageBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#243B53"/>
+      <stop offset="50%" stop-color="#334E68"/>
+      <stop offset="100%" stop-color="#1B2D40"/>
+    </linearGradient>
+    <linearGradient id="canopyGlassMirage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="70%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <linearGradient id="mirageFlame" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="60%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Canvas -->
+  <rect width="400" height="240" rx="16" fill="url(#mirageBg)"/>
+
+  <!-- Tactical Reticle -->
+  <g opacity="0.15" stroke="#E11D48" stroke-width="1">
+    <line x1="20" y1="120" x2="380" y2="120" stroke-dasharray="4 6"/>
+    <line x1="210" y1="20" x2="210" y2="220" stroke-dasharray="4 6"/>
+    <circle cx="210" cy="120" r="65" fill="none"/>
+  </g>
+
+  <!-- Snecma M53-P2 Afterburner Plume -->
+  <ellipse cx="85" cy="120" rx="20" ry="7" fill="url(#mirageFlame)"/>
+
+  <!-- Mirage 2000-5I (Pure Delta Wing Interceptor) -->
+  <g transform="translate(10, 0)">
+    <!-- Large Swept Pure Delta Wings -->
+    <path d="M 105 120 L 150 48 L 240 114 L 240 126 L 150 192 Z" fill="url(#mirageBody)" stroke="#38BDF8" stroke-width="1.5"/>
+
+    <!-- Wingtip Missiles (Magic-2 / MICA) -->
+    <rect x="145" y="46" width="28" height="3" rx="1.5" fill="#E2E8F0" stroke="#0F2942" stroke-width="0.8"/>
+    <rect x="145" y="191" width="28" height="3" rx="1.5" fill="#E2E8F0" stroke="#0F2942" stroke-width="0.8"/>
+
+    <!-- Large Tall Swept Vertical Stabilizer -->
+    <polygon points="95,116 145,113 160,120 145,127 95,124" fill="#102A43" stroke="#627D98" stroke-width="1.2"/>
+
+    <!-- Conical Fuselage with Lateral Semi-Circular Air Intakes -->
+    <path d="M 95 115 L 180 113 L 260 115 L 325 120 L 260 125 L 180 127 L 95 125 Z" fill="url(#mirageBody)" stroke="#627D98" stroke-width="1.5"/>
+    <polygon points="305,118 340,120 305,122" fill="#102A43" stroke="#38BDF8" stroke-width="1.2"/>
+
+    <!-- Intake Cones (Souris) -->
+    <polygon points="215,111 230,109 230,113" fill="#627D98"/>
+    <polygon points="215,129 230,131 230,127" fill="#627D98"/>
+
+    <!-- Teardrop Canopy -->
+    <ellipse cx="255" cy="120" rx="17" ry="5" fill="url(#canopyGlassMirage)" stroke="#BAE6FD" stroke-width="1.2"/>
+
+    <!-- IAF Roundel -->
+    <g transform="translate(175, 80) scale(0.6)">
+      <circle cx="10" cy="10" r="10" fill="#FF9933"/>
+      <circle cx="10" cy="10" r="6.6" fill="#FFFFFF"/>
+      <circle cx="10" cy="10" r="3.3" fill="#138808"/>
+    </g>
+  </g>
+
+  <!-- Technical Telemetry Badges -->
+  <text x="24" y="36" fill="#F43F5E" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5">MIRAGE 2000-5I // VAJRA</text>
+  <text x="24" y="52" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">High Altitude Intercept • Precision Strike • Spice 2000 Qualified</text>
+
+  <g transform="translate(290, 24)">
+    <rect width="86" height="20" rx="4" fill="#0F2942" stroke="#F43F5E" stroke-width="1"/>
+    <text x="43" y="14" fill="#F43F5E" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">PRECISION STRIKE</text>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="c130Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08182B"/>
+      <stop offset="100%" stop-color="#0F2942"/>
+    </linearGradient>
+    <linearGradient id="c130Body" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334E68"/>
+      <stop offset="50%" stop-color="#486581"/>
+      <stop offset="100%" stop-color="#1E3A5F"/>
+    </linearGradient>
+    <linearGradient id="propellerBlur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Canvas -->
+  <rect width="400" height="240" rx="16" fill="url(#c130Bg)"/>
+
+  <!-- Tactical Reticle -->
+  <g opacity="0.15" stroke="#D97706" stroke-width="1">
+    <line x1="20" y1="120" x2="380" y2="120" stroke-dasharray="4 6"/>
+    <line x1="200" y1="20" x2="200" y2="220" stroke-dasharray="4 6"/>
+    <circle cx="200" cy="120" r="80" fill="none"/>
+  </g>
+
+  <!-- C-130J Super Hercules (High-wing 4-Turboprop Transport) -->
+  <g transform="translate(10, 0)">
+    <!-- Horizontal Tailplane -->
+    <polygon points="50,120 70,80 90,80 95,120 90,160 70,160" fill="#243B53" stroke="#627D98" stroke-width="1.2"/>
+
+    <!-- High Straight Wing -->
+    <rect x="175" y="30" width="45" height="180" rx="4" fill="url(#c130Body)" stroke="#38BDF8" stroke-width="1.5"/>
+
+    <!-- 4x Rolls-Royce AE 2100D3 Turboprop Engines & Propeller Arcs -->
+    <!-- Left Inner & Outer -->
+    <rect x="165" y="50" width="30" height="14" rx="3" fill="#102A43" stroke="#627D98" stroke-width="1"/>
+    <ellipse cx="198" cy="57" rx="3" ry="16" fill="url(#propellerBlur)" stroke="#38BDF8" stroke-width="0.8"/>
+
+    <rect x="165" y="80" width="30" height="14" rx="3" fill="#102A43" stroke="#627D98" stroke-width="1"/>
+    <ellipse cx="198" cy="87" rx="3" ry="16" fill="url(#propellerBlur)" stroke="#38BDF8" stroke-width="0.8"/>
+
+    <!-- Right Inner & Outer -->
+    <rect x="165" y="146" width="30" height="14" rx="3" fill="#102A43" stroke="#627D98" stroke-width="1"/>
+    <ellipse cx="198" cy="153" rx="3" ry="16" fill="url(#propellerBlur)" stroke="#38BDF8" stroke-width="0.8"/>
+
+    <rect x="165" y="176" width="30" height="14" rx="3" fill="#102A43" stroke="#627D98" stroke-width="1"/>
+    <ellipse cx="198" cy="183" rx="3" ry="16" fill="url(#propellerBlur)" stroke="#38BDF8" stroke-width="0.8"/>
+
+    <!-- Wide Fuselage Body -->
+    <path d="M 60 120 L 100 106 L 260 106 L 315 113 L 330 120 L 315 127 L 260 134 L 100 134 Z" fill="url(#c130Body)" stroke="#627D98" stroke-width="1.5"/>
+
+    <!-- Cockpit Flight Deck Windows -->
+    <polygon points="305,115 320,117 320,123 305,125" fill="#38BDF8" stroke="#BAE6FD" stroke-width="1"/>
+
+    <!-- Large Single Vertical Fin Dorsal Fairing -->
+    <polygon points="70,118 130,115 130,125 70,122" fill="#1B2D40" stroke="#38BDF8" stroke-width="1"/>
+
+    <!-- IAF Roundel -->
+    <g transform="translate(190, 108) scale(0.6)">
+      <circle cx="10" cy="10" r="10" fill="#FF9933"/>
+      <circle cx="10" cy="10" r="6.6" fill="#FFFFFF"/>
+      <circle cx="10" cy="10" r="3.3" fill="#138808"/>
+    </g>
+  </g>
+
+  <!-- Technical Telemetry Badges -->
+  <text x="24" y="36" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5">C-130J // SUPER HERCULES</text>
+  <text x="24" y="52" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">Tactical Airlift • Special Ops (AFSOC) • 20,000kg Payload</text>
+
+  <g transform="translate(290, 24)">
+    <rect width="86" height="20" rx="4" fill="#0F2942" stroke="#F59E0B" stroke-width="1"/>
+    <text x="43" y="14" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">STRATEGIC AIRLIFT</text>
+  </g>
+</svg>

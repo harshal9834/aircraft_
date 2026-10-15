@@ -1,0 +1,18 @@
+{
+  "name": "air-power-operations-platform",
+  "version": "1.0.0",
+  "description": "Tactical Air Operations Console - Single Page Web Application",
+  "main": "index.html",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./server.ps1",
+    "dev": "powershell -ExecutionPolicy Bypass -File ./server.ps1"
+  },
+  "keywords": [
+    "air-power",
+    "tactical-operations",
+    "defense-ops",
+    "aviation-console"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}
