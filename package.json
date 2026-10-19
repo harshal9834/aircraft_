@@ -4,6 +4,7 @@
   "description": "Tactical Air Operations Console - Single Page Web Application",
   "main": "index.html",
   "scripts": {
+    "build": "echo 'Static build ready'",
     "start": "powershell -ExecutionPolicy Bypass -File ./server.ps1",
     "dev": "powershell -ExecutionPolicy Bypass -File ./server.ps1"
   },
