@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="netraBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08182B"/>
+      <stop offset="100%" stop-color="#0F2942"/>
+    </linearGradient>
+    <linearGradient id="netraBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334E68"/>
+      <stop offset="50%" stop-color="#486581"/>
+      <stop offset="100%" stop-color="#1B2D40"/>
+    </linearGradient>
+    <linearGradient id="radarBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <linearGradient id="radarScan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Canvas -->
+  <rect width="400" height="240" rx="16" fill="url(#netraBg)"/>
+
+  <!-- Scanning Radar Waves Indicator -->
+  <path d="M 160 50 A 70 70 0 0 1 240 50" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M 140 35 A 90 90 0 0 1 260 35" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M 160 190 A 70 70 0 0 0 240 190" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M 140 205 A 90 90 0 0 0 260 205" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- Netra AEW&C (Embraer ERJ-145 platform with Dorsal Active Antenna Array Unit - AAAU) -->
+  <g transform="translate(10, 0)">
+    <!-- T-Tail Stabilizers -->
+    <polygon points="50,120 70,85 85,85 75,120 85,155 70,155" fill="#243B53" stroke="#627D98" stroke-width="1.2"/>
+
+    <!-- Swept Wings -->
+    <polygon points="170,120 190,60 215,60 220,120 215,180 190,180" fill="url(#netraBody)" stroke="#38BDF8" stroke-width="1.5"/>
+
+    <!-- Rear Fuselage Mounted Turbofan Engines -->
+    <rect x="100" y="100" width="35" height="10" rx="3" fill="#102A43" stroke="#627D98" stroke-width="1"/>
+    <rect x="100" y="130" width="35" height="10" rx="3" fill="#102A43" stroke="#627D98" stroke-width="1"/>
+
+    <!-- Sleek Fuselage -->
+    <path d="M 65 120 L 95 113 L 265 113 L 320 117 L 335 120 L 320 123 L 265 127 L 95 127 Z" fill="url(#netraBody)" stroke="#627D98" stroke-width="1.5"/>
+    <polygon points="310,117 335,120 310,123" fill="#102A43" stroke="#38BDF8" stroke-width="1.2"/>
+
+    <!-- Cockpit Windows -->
+    <polygon points="305,116 318,118 318,122 305,124" fill="#38BDF8" stroke="#BAE6FD" stroke-width="1"/>
+
+    <!-- Dorsal Active Antenna Array Unit (AAAU - 240-degree AESA Beam) -->
+    <rect x="160" y="115" width="85" height="10" rx="3" fill="url(#radarBeam)" stroke="#BAE6FD" stroke-width="1.5"/>
+    <!-- Antenna Strut Mounts -->
+    <line x1="175" y1="113" x2="175" y2="127" stroke="#102A43" stroke-width="2"/>
+    <line x1="230" y1="113" x2="230" y2="127" stroke="#102A43" stroke-width="2"/>
+
+    <!-- IAF Roundel -->
+    <g transform="translate(195, 80) scale(0.6)">
+      <circle cx="10" cy="10" r="10" fill="#FF9933"/>
+      <circle cx="10" cy="10" r="6.6" fill="#FFFFFF"/>
+      <circle cx="10" cy="10" r="3.3" fill="#138808"/>
+    </g>
+  </g>
+
+  <!-- Technical Telemetry Badges -->
+  <text x="24" y="36" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5">NETRA // AEW&amp;C SURVEILLANCE</text>
+  <text x="24" y="52" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">240° Active Antenna Array • C4ISR Battle Management Node</text>
+
+  <g transform="translate(290, 24)">
+    <rect width="86" height="20" rx="4" fill="#0F2942" stroke="#38BDF8" stroke-width="1"/>
+    <text x="43" y="14" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">AIRBORNE RADAR</text>
+  </g>
+</svg>

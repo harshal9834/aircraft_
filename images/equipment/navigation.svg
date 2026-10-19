@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="navBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08182B"/>
+      <stop offset="100%" stop-color="#0F2942"/>
+    </linearGradient>
+    <linearGradient id="gyroGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" rx="16" fill="url(#navBg)"/>
+  <!-- Circular Precision Ring Laser Gyroscope Mechanism -->
+  <g transform="translate(200, 120)">
+    <!-- Outer Gimbal Ring -->
+    <ellipse cx="0" cy="0" rx="90" ry="75" fill="none" stroke="#1E3A8A" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="88" ry="73" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <!-- Pitch Ring -->
+    <ellipse cx="0" cy="0" rx="68" ry="55" fill="none" stroke="#38BDF8" stroke-width="2.5" opacity="0.9"/>
+    <!-- Inner Resonator Core Ring -->
+    <circle cx="0" cy="0" r="38" fill="#06121E" stroke="#059669" stroke-width="2"/>
+    <!-- Triangular Laser Cavity Beam Path -->
+    <polygon points="0,-28 24,18 -24,18" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.85"/>
+    <polygon points="0,-28 24,18 -24,18" fill="#38BDF8" opacity="0.12"/>
+    <!-- Laser Corner Prism Nodes -->
+    <circle cx="0" cy="-28" r="4.5" fill="#38BDF8"/>
+    <circle cx="24" cy="18" r="4.5" fill="#38BDF8"/>
+    <circle cx="-24" cy="18" r="4.5" fill="#38BDF8"/>
+    <!-- Central Optical Axis -->
+    <circle cx="0" cy="0" r="6" fill="#059669"/>
+    <circle cx="0" cy="0" r="2" fill="#E2E8F0"/>
+    <!-- Degree Axis Hash Marks -->
+    <line x1="-98" y1="0" x2="-82" y2="0" stroke="#38BDF8" stroke-width="2"/>
+    <line x1="82" y1="0" x2="98" y2="0" stroke="#38BDF8" stroke-width="2"/>
+    <line x1="0" y1="-82" x2="0" y2="-68" stroke="#38BDF8" stroke-width="2"/>
+    <line x1="0" y1="68" x2="0" y2="82" stroke="#38BDF8" stroke-width="2"/>
+  </g>
+  <!-- Technical Dimension Callouts -->
+  <g opacity="0.7">
+    <path d="M 60,75 L 85,75 L 115,100" fill="none" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="55" y="70" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="9">DRIFT &lt; 0.001°/HR</text>
+    <path d="M 340,165 L 315,165 L 285,140" fill="none" stroke="#059669" stroke-width="1.2"/>
+    <text x="280" y="180" fill="#059669" font-family="'JetBrains Mono', monospace" font-size="9">INS/GPS TRIPLE REDUNDANT</text>
+  </g>
+  <!-- Label -->
+  <rect x="110" y="222" width="180" height="22" rx="11" fill="#0F2942" stroke="#2563EB" stroke-width="1"/>
+  <text x="200" y="237" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">INERTIAL GYRO &amp; NAV</text>
+</svg>

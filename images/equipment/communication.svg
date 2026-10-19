@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="commBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08182B"/>
+      <stop offset="100%" stop-color="#0F2942"/>
+    </linearGradient>
+    <linearGradient id="signalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" rx="16" fill="url(#commBg)"/>
+  <!-- Radio Console Chassis -->
+  <rect x="60" y="45" width="280" height="170" rx="14" fill="#0C2037" stroke="#2563EB" stroke-width="2.5"/>
+  <rect x="75" y="60" width="150" height="85" rx="8" fill="#06121E" stroke="#1E3A8A" stroke-width="1.5"/>
+  <!-- Frequency Spectrum Waves in Display -->
+  <path d="M 85,105 Q 100,85 115,105 T 145,105 T 175,95 T 205,105" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
+  <path d="M 85,115 Q 105,100 125,115 T 165,115 T 205,110" fill="none" stroke="#059669" stroke-width="2" opacity="0.8"/>
+  <!-- Digital Frequency Text -->
+  <text x="90" y="80" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">342.850 MHz</text>
+  <text x="90" y="135" fill="#059669" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">ENCRYPTED / LINK-16</text>
+  <!-- Right Control Panel: Knobs and Meter -->
+  <g transform="translate(240, 60)">
+    <!-- Rotary Dial 1 -->
+    <circle cx="35" cy="20" r="16" fill="#0A182A" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="35" cy="20" r="4" fill="#38BDF8"/>
+    <line x1="35" y1="20" x2="45" y2="12" stroke="#38BDF8" stroke-width="2"/>
+    <!-- Rotary Dial 2 -->
+    <circle cx="35" cy="62" r="16" fill="#0A182A" stroke="#2563EB" stroke-width="2"/>
+    <circle cx="35" cy="62" r="4" fill="#2563EB"/>
+    <line x1="35" y1="62" x2="25" y2="55" stroke="#2563EB" stroke-width="2"/>
+  </g>
+  <!-- Lower Button Matrix -->
+  <g transform="translate(75, 160)">
+    <rect x="0" y="0" width="30" height="18" rx="4" fill="#2563EB" opacity="0.8"/>
+    <rect x="36" y="0" width="30" height="18" rx="4" fill="#0B1C30" stroke="#38BDF8" stroke-width="1"/>
+    <rect x="72" y="0" width="30" height="18" rx="4" fill="#0B1C30" stroke="#38BDF8" stroke-width="1"/>
+    <rect x="108" y="0" width="30" height="18" rx="4" fill="#059669" opacity="0.9"/>
+    <rect x="144" y="0" width="30" height="18" rx="4" fill="#0B1C30" stroke="#38BDF8" stroke-width="1"/>
+    <rect x="180" y="0" width="30" height="18" rx="4" fill="#0B1C30" stroke="#38BDF8" stroke-width="1"/>
+    <circle cx="230" cy="9" r="6" fill="#059669"/>
+    <circle cx="248" cy="9" r="6" fill="#D97706"/>
+  </g>
+  <!-- Antenna & Radiating Signal Waves -->
+  <path d="M 190,45 L 190,15 L 180,10 M 190,15 L 200,10" fill="none" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="190" cy="15" r="3.5" fill="#38BDF8"/>
+  <path d="M 170,12 A 25,25 0 0,1 210,12" fill="none" stroke="#38BDF8" stroke-width="1.8" opacity="0.7"/>
+  <path d="M 155,5 A 42,42 0 0,1 225,5" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="120" y="222" width="160" height="22" rx="11" fill="#0F2942" stroke="#2563EB" stroke-width="1"/>
+  <text x="200" y="237" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">TACTICAL DATA RELAY</text>
+</svg>

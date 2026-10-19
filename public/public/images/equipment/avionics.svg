@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08182B"/>
+      <stop offset="100%" stop-color="#0F2942"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" rx="16" fill="url(#bgGrad)"/>
+  <!-- Tactical Grid -->
+  <g opacity="0.25" stroke="#38BDF8" stroke-width="0.75" stroke-dasharray="3,3">
+    <line x1="40" y1="30" x2="360" y2="30"/>
+    <line x1="40" y1="80" x2="360" y2="80"/>
+    <line x1="40" y1="130" x2="360" y2="130"/>
+    <line x1="40" y1="180" x2="360" y2="180"/>
+    <line x1="40" y1="230" x2="360" y2="230"/>
+    <line x1="80" y1="20" x2="80" y2="240"/>
+    <line x1="160" y1="20" x2="160" y2="240"/>
+    <line x1="240" y1="20" x2="240" y2="240"/>
+    <line x1="320" y1="20" x2="320" y2="240"/>
+  </g>
+  <!-- HUD / Display Frame -->
+  <rect x="70" y="45" width="260" height="170" rx="12" fill="#0B1C30" stroke="#2563EB" stroke-width="2.5" opacity="0.9"/>
+  <!-- Screen Glow Inner -->
+  <rect x="80" y="55" width="240" height="150" rx="8" fill="#071424"/>
+  <!-- Crosshairs and HUD Flight Vector -->
+  <circle cx="200" cy="130" r="46" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <circle cx="200" cy="130" r="24" fill="none" stroke="#2563EB" stroke-width="1.5"/>
+  <line x1="140" y1="130" x2="175" y2="130" stroke="#38BDF8" stroke-width="2"/>
+  <line x1="225" y1="130" x2="260" y2="130" stroke="#38BDF8" stroke-width="2"/>
+  <line x1="200" y1="75" x2="200" y2="105" stroke="#38BDF8" stroke-width="2"/>
+  <line x1="200" y1="155" x2="200" y2="185" stroke="#38BDF8" stroke-width="2"/>
+  <!-- Synthetic Flight Horizon -->
+  <line x1="100" y1="130" x2="130" y2="130" stroke="#059669" stroke-width="2"/>
+  <line x1="270" y1="130" x2="300" y2="130" stroke="#059669" stroke-width="2"/>
+  <!-- Status Data Readout Lines -->
+  <rect x="90" y="65" width="60" height="5" rx="2" fill="#38BDF8" opacity="0.8"/>
+  <rect x="90" y="74" width="40" height="4" rx="2" fill="#38BDF8" opacity="0.5"/>
+  <rect x="90" y="82" width="50" height="4" rx="2" fill="#059669" opacity="0.7"/>
+  <rect x="250" y="65" width="60" height="5" rx="2" fill="#38BDF8" opacity="0.8"/>
+  <rect x="270" y="74" width="40" height="4" rx="2" fill="#38BDF8" opacity="0.5"/>
+  <rect x="250" y="82" width="60" height="4" rx="2" fill="#D97706" opacity="0.7"/>
+  <!-- Target Reticle Box -->
+  <rect x="188" y="118" width="24" height="24" rx="4" fill="none" stroke="#059669" stroke-width="1.5"/>
+  <!-- Bottom Corner Brackets -->
+  <path d="M 50,65 L 50,45 L 70,45" fill="none" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M 350,65 L 350,45 L 330,45" fill="none" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M 50,195 L 50,215 L 70,215" fill="none" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M 350,195 L 350,215 L 330,215" fill="none" stroke="#38BDF8" stroke-width="2"/>
+  <!-- Badge Label -->
+  <rect x="130" y="222" width="140" height="22" rx="11" fill="#0F2942" stroke="#2563EB" stroke-width="1"/>
+  <text x="200" y="237" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">AVIONICS BUS SYSTEM</text>
+</svg>

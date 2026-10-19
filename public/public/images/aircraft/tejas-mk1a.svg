@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tejasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08182B"/>
+      <stop offset="100%" stop-color="#0F2942"/>
+    </linearGradient>
+    <linearGradient id="tejasBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#243B53"/>
+      <stop offset="50%" stop-color="#334E68"/>
+      <stop offset="100%" stop-color="#102A43"/>
+    </linearGradient>
+    <linearGradient id="canopyGlassTejas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="70%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <linearGradient id="tejasFlame" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="60%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Canvas -->
+  <rect width="400" height="240" rx="16" fill="url(#tejasBg)"/>
+
+  <!-- Tactical Reticle -->
+  <g opacity="0.15" stroke="#38BDF8" stroke-width="1">
+    <line x1="20" y1="120" x2="380" y2="120" stroke-dasharray="4 6"/>
+    <line x1="220" y1="20" x2="220" y2="220" stroke-dasharray="4 6"/>
+    <circle cx="220" cy="120" r="65" fill="none"/>
+  </g>
+
+  <!-- Single F404-IN20 Afterburner -->
+  <ellipse cx="90" cy="120" rx="22" ry="8" fill="url(#tejasFlame)"/>
+
+  <!-- LCA Tejas MK-1A (Tailless Compound Delta Wing) -->
+  <g transform="translate(15, 0)">
+    <!-- Compound Delta Wings -->
+    <path d="M 115 120 L 155 58 L 205 92 L 250 114 L 250 126 L 205 148 L 155 182 Z" fill="url(#tejasBody)" stroke="#38BDF8" stroke-width="1.5"/>
+
+    <!-- Wingtip Missiles (ASRAAM / Python-5) -->
+    <rect x="150" y="56" width="30" height="3" rx="1.5" fill="#E2E8F0" stroke="#0F2942" stroke-width="0.8"/>
+    <rect x="150" y="181" width="30" height="3" rx="1.5" fill="#E2E8F0" stroke="#0F2942" stroke-width="0.8"/>
+
+    <!-- Single Swept Fin -->
+    <polygon points="105,116 150,113 162,120 150,127 105,124" fill="#102A43" stroke="#627D98" stroke-width="1.2"/>
+
+    <!-- Fuselage & Radome with Uttam AESA Radar -->
+    <path d="M 100 115 L 180 113 L 260 115 L 320 120 L 260 125 L 180 127 L 100 125 Z" fill="url(#tejasBody)" stroke="#627D98" stroke-width="1.5"/>
+    <polygon points="295,118 335,120 295,122" fill="#102A43" stroke="#38BDF8" stroke-width="1.2"/>
+
+    <!-- Cockpit Canopy -->
+    <ellipse cx="250" cy="120" rx="18" ry="5.5" fill="url(#canopyGlassTejas)" stroke="#BAE6FD" stroke-width="1.2"/>
+
+    <!-- IAF Roundel -->
+    <g transform="translate(180, 85) scale(0.6)">
+      <circle cx="10" cy="10" r="10" fill="#FF9933"/>
+      <circle cx="10" cy="10" r="6.6" fill="#FFFFFF"/>
+      <circle cx="10" cy="10" r="3.3" fill="#138808"/>
+    </g>
+  </g>
+
+  <!-- Technical Telemetry Badges -->
+  <text x="24" y="36" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5">TEJAS MK-1A // INDIGENOUS LCA</text>
+  <text x="24" y="52" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">Compound Delta • Uttam AESA • Advanced Fly-By-Wire</text>
+
+  <g transform="translate(290, 24)">
+    <rect width="86" height="20" rx="4" fill="#0F2942" stroke="#38BDF8" stroke-width="1"/>
+    <text x="43" y="14" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">LIGHT FIGHTER</text>
+  </g>
+</svg>
